@@ -1,0 +1,97 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+.DS_Store
+pooch
+pooch_acc
+Pooch.vcxproj.user
+x64/Debug/Pooch.Build.CppClean.log
+x64/Debug/Pooch.exe.recipe
+x64/Debug/Pooch.log
+x64/Debug/Pooch.tlog/CL.command.1.tlog
+x64/Debug/Pooch.tlog/CL.read.1.tlog
+x64/Debug/Pooch.tlog/CL.write.1.tlog
+x64/Debug/Pooch.tlog/link.command.1.tlog
+x64/Debug/Pooch.tlog/link.read.1.tlog
+x64/Debug/Pooch.tlog/link.write.1.tlog
+x64/Debug/Pooch.tlog/Pooch.lastbuildstate
+x64/Debug/Pooch.vcxproj.FileListAbsolute.txt
+x64/Release/Pooch.Build.CppClean.log
+x64/Release/Pooch.exe.recipe
+x64/Release/Pooch.log
+x64/Release/Pooch.tlog/CL.command.1.tlog
+x64/Release/Pooch.tlog/CL.read.1.tlog
+x64/Release/Pooch.tlog/CL.write.1.tlog
+x64/Release/Pooch.tlog/link.command.1.tlog
+x64/Release/Pooch.tlog/link.read.1.tlog
+x64/Release/Pooch.tlog/link.write.1.tlog
+x64/Release/Pooch.tlog/Pooch.lastbuildstate
+x64/Release/Pooch.vcxproj.FileListAbsolute.txt
+x64/Release_Acc/Pooch.Build.CppClean.log
+x64/Release_Acc/Pooch.exe.recipe
+x64/Release_Acc/Pooch.log
+x64/Release_Acc/Pooch.tlog/CL.command.1.tlog
+x64/Release_Acc/Pooch.tlog/CL.read.1.tlog
+x64/Release_Acc/Pooch.tlog/CL.write.1.tlog
+x64/Release_Acc/Pooch.tlog/link.command.1.tlog
+x64/Release_Acc/Pooch.tlog/link.read.1.tlog
+x64/Release_Acc/Pooch.tlog/link.write.1.tlog
+x64/Release_Acc/Pooch.tlog/Pooch.lastbuildstate
+x64/Release_Acc/Pooch.vcxproj.FileListAbsolute.txt
+*.tlog
+*.asm
+*.log
+*.recipe
+*.res
+*.dat
+*.cfg
+src/x64/Release/pooch.vcxproj.FileListAbsolute.txt
