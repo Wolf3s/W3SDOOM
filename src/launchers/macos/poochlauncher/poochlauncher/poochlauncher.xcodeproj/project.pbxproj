@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A3998042752D31500FB3A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3998032752D31500FB3A68 /* Assets.xcassets */; };
+		2A39981C2752D38800FB3A68 /* LauncherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3998112752D38700FB3A68 /* LauncherManager.m */; };
+		2A39981F2752D38800FB3A68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3998172752D38800FB3A68 /* main.m */; };
+		2A3998202752D38800FB3A68 /* Execute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3998192752D38800FB3A68 /* Execute.m */; };
+		2A3998222752D3B100FB3A68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3998212752D3B100FB3A68 /* AppDelegate.m */; };
+		2A3998252752D3BB00FB3A68 /* launcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3998232752D3BB00FB3A68 /* launcher.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A3997FD2752D30D00FB3A68 /* Pooch Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pooch Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3998032752D31500FB3A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A39980A2752D31500FB3A68 /* sprinkledlauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sprinkledlauncher.entitlements; sourceTree = "<group>"; };
+		2A3998112752D38700FB3A68 /* LauncherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherManager.m; sourceTree = "<group>"; };
+		2A3998142752D38800FB3A68 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A3998152752D38800FB3A68 /* Execute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Execute.h; sourceTree = "<group>"; };
+		2A3998172752D38800FB3A68 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A3998182752D38800FB3A68 /* LauncherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherManager.h; sourceTree = "<group>"; };
+		2A3998192752D38800FB3A68 /* Execute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Execute.m; sourceTree = "<group>"; };
+		2A3998212752D3B100FB3A68 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A3998242752D3BB00FB3A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/launcher.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A3997FA2752D30D00FB3A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A3997F42752D30D00FB3A68 = {
+			isa = PBXGroup;
+			children = (
+				2A3997FF2752D30D00FB3A68 /* sprinkledlauncher */,
+				2A3997FE2752D30D00FB3A68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A3997FE2752D30D00FB3A68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A3997FD2752D30D00FB3A68 /* Pooch Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A3997FF2752D30D00FB3A68 /* sprinkledlauncher */ = {
+			isa = PBXGroup;
+			children = (
+				2A3998232752D3BB00FB3A68 /* launcher.xib */,
+				2A3998212752D3B100FB3A68 /* AppDelegate.m */,
+				2A3998142752D38800FB3A68 /* AppDelegate.h */,
+				2A3998152752D38800FB3A68 /* Execute.h */,
+				2A3998192752D38800FB3A68 /* Execute.m */,
+				2A3998182752D38800FB3A68 /* LauncherManager.h */,
+				2A3998112752D38700FB3A68 /* LauncherManager.m */,
+				2A3998172752D38800FB3A68 /* main.m */,
+				2A3998032752D31500FB3A68 /* Assets.xcassets */,
+				2A39980A2752D31500FB3A68 /* sprinkledlauncher.entitlements */,
+			);
+			path = sprinkledlauncher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A3997FC2752D30D00FB3A68 /* poochlauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A39980D2752D31500FB3A68 /* Build configuration list for PBXNativeTarget "poochlauncher" */;
+			buildPhases = (
+				2A3997F92752D30D00FB3A68 /* Sources */,
+				2A3997FA2752D30D00FB3A68 /* Frameworks */,
+				2A3997FB2752D30D00FB3A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = poochlauncher;
+			productName = sprinkledlauncher;
+			productReference = 2A3997FD2752D30D00FB3A68 /* Pooch Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A3997F52752D30D00FB3A68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2A3997FC2752D30D00FB3A68 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 2A3997F82752D30D00FB3A68 /* Build configuration list for PBXProject "poochlauncher" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A3997F42752D30D00FB3A68;
+			productRefGroup = 2A3997FE2752D30D00FB3A68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A3997FC2752D30D00FB3A68 /* poochlauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A3997FB2752D30D00FB3A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3998042752D31500FB3A68 /* Assets.xcassets in Resources */,
+				2A3998252752D3BB00FB3A68 /* launcher.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A3997F92752D30D00FB3A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3998202752D38800FB3A68 /* Execute.m in Sources */,
+				2A3998222752D3B100FB3A68 /* AppDelegate.m in Sources */,
+				2A39981C2752D38800FB3A68 /* LauncherManager.m in Sources */,
+				2A39981F2752D38800FB3A68 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A3998232752D3BB00FB3A68 /* launcher.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3998242752D3BB00FB3A68 /* Base */,
+			);
+			name = launcher.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A39980B2752D31500FB3A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2A39980C2752D31500FB3A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2A39980E2752D31500FB3A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sprinkledlauncher/sprinkledlauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = launcher;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gibbon.launcher;
+				PRODUCT_NAME = "Pooch Launcher";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		2A39980F2752D31500FB3A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sprinkledlauncher/sprinkledlauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = launcher;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gibbon.launcher;
+				PRODUCT_NAME = "Pooch Launcher";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A3997F82752D30D00FB3A68 /* Build configuration list for PBXProject "poochlauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A39980B2752D31500FB3A68 /* Debug */,
+				2A39980C2752D31500FB3A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A39980D2752D31500FB3A68 /* Build configuration list for PBXNativeTarget "poochlauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A39980E2752D31500FB3A68 /* Debug */,
+				2A39980F2752D31500FB3A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A3997F52752D30D00FB3A68 /* Project object */;
+}
