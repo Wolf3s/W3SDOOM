@@ -1,5 +1,5 @@
 # Pooch!
-[![Pooch! Icon](https://github.com/atsb/pooch/blob/master/src/pooch_icon.png)](https://github.com/atsb/pooch)
+[![Pooch! Icon](https://github.com/wolfysdl/pooch-plus/blob/master/src/pooch_icon.png)](https://github.com/wolfysdl/pooch-plus)
 Pooch is your old trusty Doom source port of WinMBF (Marine's Best Friend) that is revived for 64bit systems while being historically accurate, nothing more, nothing less.
 
 Pooch was the worlds first 64bit port of MBF/WinMBF and predates Woof! By around 2 years.
