@@ -1,9 +1,7 @@
-// SprinkledLauncher.cpp : Defines the entry point for the application.
-//
-
 /*
     Pooch Launcher - a minimalist WIN32 API launcher for the Pooch Source Port
-    Copyright (C) 2021  Adam Bilbrough
+    Copyright (C) 2021-2022  Adam Bilbrough
+    Copyright (C) 2022-2023  André Guilherme
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,7 +18,7 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#include "framework.h"
+#include "Resource.h"
 #include "PoochLauncher.h"
 
 // Max strings
@@ -62,7 +60,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     MSG msg;
 
     // Main message loop:
-    while (GetMessage(&msg, nullptr, 0, 0))
+    while(GetMessage(&msg, NULL, 0, 0))
     {
         if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
         {
@@ -91,7 +89,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
     wcex.cbWndExtra     = 0;
     wcex.hInstance      = hInstance;
     wcex.hIcon          = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_POOCHLAUNCHER));
-    wcex.hCursor        = LoadCursor(nullptr, IDC_ARROW);
+    wcex.hCursor        = LoadCursor(NULL, IDC_ARROW);
     wcex.hbrBackground  = CreateSolidBrush(RGB(240, 240, 240)); //RGB colours for the typical 'Classic Windows' look.
     wcex.lpszMenuName   = MAKEINTRESOURCEW(IDC_POOCHLAUNCHER);
     wcex.lpszClassName  = szWindowClass;
@@ -115,7 +113,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    hInst = hInstance; // Store instance handle in our global variable
 
    HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
-      CW_USEDEFAULT, CW_USEDEFAULT, 736, 390, nullptr, nullptr, hInstance, nullptr);
+      CW_USEDEFAULT, CW_USEDEFAULT, 736, 390, NULL, NULL, hInstance, NULL);
 
    if (!hWnd)
    {
@@ -170,7 +168,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             // A lot of people will try to use GetWindowText/GetWindowLength
             // but this is a more efficient way to do it.
             argTextLength = SendMessage(CommandLineArgs, WM_GETTEXTLENGTH, 0, 0);                   // Getting the length of the string we have typed in the edit control
-            argText = new wchar_t[argTextLength];                                                   // The text we have typed plus the length into a wchar_t
+            argText = malloc((wchar_t)argTextLength);                                                   // The text we have typed plus the length into a wchar_t
             SendMessage(CommandLineArgs, WM_GETTEXT, (WPARAM)argTextLength + 1, (LPARAM)argText);   // The sending of the combined Edit control, the text and the expected length + the extra byte for the NULL termination
             int wmId = LOWORD(wParam);                                                              // This gets the 'clickling' so we don't have to declare it for each case
 

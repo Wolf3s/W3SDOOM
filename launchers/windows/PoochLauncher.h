@@ -1,5 +1,3 @@
-#pragma once
-
 /*
     Pooch Launcher - a minimalist WIN32 API launcher for the Pooch Source Port
     Copyright (C) 2021  Adam Bilbrough
@@ -19,7 +17,16 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#include "resource.h"
+#include <SDKDDKVer.h>
+#define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
+// Windows Header Files
+#include <windows.h>
+// C RunTime Header Files
+#include <stdlib.h>
+#include <malloc.h>
+#include <memory.h>
+#include <tchar.h>
+#include <shellapi.h>
 
 // This file hold the global variables in-use in SprinkledLauncher.cpp
 
