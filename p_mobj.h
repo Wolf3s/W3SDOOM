@@ -351,8 +351,8 @@ typedef struct mobj_s
 #define GRAVITY         FRACUNIT
 #define MAXMOVE         (30*FRACUNIT)
 
-#define ONFLOORZ        D_MININT
-#define ONCEILINGZ      D_MAXINT
+#define ONFLOORZ        INT_MIN
+#define ONCEILINGZ      INT_MAX
 
 // Time interval for item respawning.
 #define ITEMQUESIZE     128

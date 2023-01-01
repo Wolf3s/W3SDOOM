@@ -1518,7 +1518,7 @@ void D_DoomMain(void)
       // killough 5/2/98: this takes a memory
       // address as an integer on the command line!
 
-      statcopy = (void*)(intptr_t) atoi(myargv[p+1]);
+      statcopy = (void*)(long) atoi(myargv[p+1]);
       puts("External statistics registered.");
     }
 
@@ -1589,7 +1589,6 @@ void D_DoomMain(void)
     }
 
   I_InitGraphics();
-
   atexit(D_QuitNetGame);       // killough
 
   for (;;)

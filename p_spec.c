@@ -442,7 +442,7 @@ fixed_t P_FindNextHighestCeiling(sector_t *sec, int currentheight)
 fixed_t P_FindLowestCeilingSurrounding(sector_t* sec)
 {
   const sector_t *other;
-  fixed_t height = D_MAXINT;
+  fixed_t height = INT_MAX;
   int i;
 
   if (!comp[comp_model])
@@ -505,7 +505,7 @@ fixed_t P_FindHighestCeilingSurrounding(sector_t* sec)
 fixed_t P_FindShortestTextureAround(int secnum)
 {
   const sector_t *sec = &sectors[secnum];
-  int i, minsize = D_MAXINT;
+  int i, minsize = INT_MAX;
 
   if (!comp[comp_model])
     minsize = 32000<<FRACBITS; //jff 3/13/98 prevent overflow in height calcs
@@ -541,7 +541,7 @@ fixed_t P_FindShortestTextureAround(int secnum)
 fixed_t P_FindShortestUpperAround(int secnum)
 {
   const sector_t *sec = &sectors[secnum];
-  int i, minsize = D_MAXINT;
+  int i, minsize = INT_MAX;
 
   if (!comp[comp_model])
     minsize = 32000<<FRACBITS; //jff 3/13/98 prevent overflow
@@ -2526,7 +2526,7 @@ void T_Scroll(scroll_t *s)
       height = sec->floorheight;
       waterheight = sec->heightsec != -1 &&
         sectors[sec->heightsec].floorheight > height ?
-        sectors[sec->heightsec].floorheight : D_MININT;
+        sectors[sec->heightsec].floorheight : INT_MIN;
 
       // Move objects only if on floor or underwater,
       // non-floating, and clipped.

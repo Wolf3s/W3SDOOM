@@ -30,14 +30,8 @@
 #ifndef __DOOMTYPE__
 #define __DOOMTYPE__
 
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
-
 #include <stdint.h> // [FG] include for intptr_t types
 
-#ifndef __BYTEBOOL__
-#define __BYTEBOOL__
 // Fixed to use builtin bool type with C++.
 #ifdef __cplusplus
 typedef bool boolean;
@@ -45,7 +39,6 @@ typedef bool boolean;
 typedef enum {false, true} boolean;
 #endif
 typedef unsigned char byte;
-#endif
 
 // haleyjd: 64-bit integer type
 #if defined(_MSC_VER)   // MSVC
@@ -60,14 +53,8 @@ typedef unsigned __LONG64_TYPE__ ULong64;
 typedef __LONG64_TYPE__ Long64;
 
 // haleyjd: resolve platform-specific range symbol issues
-
+// André: Removed all the limits useless stuff no need at all!!!
 #include <limits.h>
-#define D_MAXINT INT_MAX
-#define D_MININT INT_MIN
-#define D_MAXSHORT  SHRT_MAX
-
-#define MAXCHAR         ((char)0x7f)
-#define MINCHAR         ((char)0x80)
 
 #define arrlen(array) (sizeof(array) / sizeof(*array))
 

@@ -90,7 +90,7 @@ extern int  key_escape;                // phares
 //
 int NetbufferSize (void)
 {
-  return (intptr_t)&(((doomdata_t *)0)->cmds[netbuffer->numtics]);
+  return (long)&(((doomdata_t *)0)->cmds[netbuffer->numtics]);
 }
 
 //
@@ -108,7 +108,7 @@ unsigned NetbufferChecksum (void)
 //    return 0;                 // byte order problems
 //#endif
 
-  l = (NetbufferSize () - (intptr_t)&(((doomdata_t *)0)->retransmitfrom))/4;
+  l = (NetbufferSize () - (long)&(((doomdata_t *)0)->retransmitfrom))/4;
   for (i=0 ; i<l ; i++)
     c += ((unsigned *)&netbuffer->retransmitfrom)[i] * (i+1);
 
@@ -679,7 +679,7 @@ void TryRunTics (void)
   // get available tics
   NetUpdate ();
       
-  lowtic = D_MAXINT;
+  lowtic = INT_MAX;
   numplaying = 0;
   for (i=0 ; i<doomcom->numnodes ; i++)
   {
@@ -742,7 +742,7 @@ void TryRunTics (void)
   while (lowtic < gametic/ticdup + counts)    
   {
     NetUpdate ();   
-    lowtic = D_MAXINT;
+    lowtic = INT_MAX;
     
     for (i=0 ; i<doomcom->numnodes ; i++)
       if (nodeingame[i] && nettics[i] < lowtic)

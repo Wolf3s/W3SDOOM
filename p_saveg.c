@@ -42,7 +42,7 @@ byte *save_p;
 
 // Pads save_p to a 4-byte boundary
 //  so that the load/save works on SGI&Gecko.
-#define PADSAVEP()    do { save_p += (4 - ((intptr_t) save_p & 3)) & 3; } while (0)
+#define PADSAVEP()    do { save_p += (4 - ((long) save_p & 3)) & 3; } while (0)
 //
 // P_ArchivePlayers
 //

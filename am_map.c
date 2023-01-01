@@ -306,11 +306,11 @@ void AM_getIslope
   dy = ml->a.y - ml->b.y;
   dx = ml->b.x - ml->a.x;
   if (!dy)
-    is->islp = (dx<0?-D_MAXINT:D_MAXINT);
+    is->islp = (dx<0?-INT_MAX:INT_MAX);
   else
     is->islp = FixedDiv(dx, dy);
   if (!dx)
-    is->slp = (dy<0?-D_MAXINT:D_MAXINT);
+    is->slp = (dy<0?-INT_MAX:INT_MAX);
   else
     is->slp = FixedDiv(dy, dx);
 }
@@ -417,8 +417,8 @@ void AM_findMinMaxBoundaries(void)
   fixed_t a;
   fixed_t b;
 
-  min_x = min_y =  D_MAXINT;
-  max_x = max_y = -D_MAXINT;
+  min_x = min_y =  INT_MAX;
+  max_x = max_y = -INT_MAX;
 
   for (i=0;i<numvertexes;i++)
   {
@@ -458,7 +458,7 @@ void AM_changeWindowLoc(void)
   if (m_paninc.x || m_paninc.y)
   {
     followplayer = 0;
-    f_oldloc.x = D_MAXINT;
+    f_oldloc.x = INT_MAX;
   }
 
   m_x += m_paninc.x;
@@ -496,7 +496,7 @@ void AM_initVariables(void)
   automapactive = true;
   fb = screens[0];
 
-  f_oldloc.x = D_MAXINT;
+  f_oldloc.x = INT_MAX;
   amclock = 0;
   lightlev = 0;
 
@@ -758,7 +758,7 @@ boolean AM_Responder
     else if (ch == key_map_follow)
     {
       followplayer = !followplayer;
-      f_oldloc.x = D_MAXINT;
+      f_oldloc.x = INT_MAX;
       // Ty 03/27/98 - externalized
       plr->message = followplayer ? s_AMSTR_FOLLOWON : s_AMSTR_FOLLOWOFF;
     }

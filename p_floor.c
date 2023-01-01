@@ -551,7 +551,7 @@ int EV_DoFloor
 
       case raiseToTexture:
         {
-          int minsize = D_MAXINT;
+          int minsize = INT_MAX; //?
           side_t*     side;
                       
           if (!comp[comp_model])  // killough 10/98

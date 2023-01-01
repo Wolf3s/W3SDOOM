@@ -158,7 +158,7 @@ void R_RenderMaskedSegRange(drawseg_t *ds, int x1, int x2)
 
   // draw the columns
   for (dc_x = x1 ; dc_x <= x2 ; dc_x++, spryscale += rw_scalestep)
-    if (maskedtexturecol[dc_x] != D_MAXSHORT)
+    if (maskedtexturecol[dc_x] != SHRT_MAX)
       {
         if (!fixedcolormap)      // calculate lighting
           {                             // killough 11/98:
@@ -203,7 +203,7 @@ void R_RenderMaskedSegRange(drawseg_t *ds, int x1, int x2)
         col = (column_t *)((byte *)
                            R_GetColumn(texnum,maskedtexturecol[dc_x]) - 3);
         R_DrawMaskedColumn (col);
-        maskedtexturecol[dc_x] = D_MAXSHORT;
+        maskedtexturecol[dc_x] = SHRT_MAX;
       }
 
   // Except for main_tranmap, mark others purgable at this point
@@ -480,8 +480,8 @@ void R_StoreWallRange(const int start, const int stop)
       ds_p->silhouette = SIL_BOTH;
       ds_p->sprtopclip = screenheightarray;
       ds_p->sprbottomclip = negonearray;
-      ds_p->bsilheight = D_MAXINT;
-      ds_p->tsilheight = D_MININT;
+      ds_p->bsilheight = INT_MAX;
+      ds_p->tsilheight = INT_MIN;
     }
   else      // two sided line
     {
@@ -497,7 +497,7 @@ void R_StoreWallRange(const int start, const int stop)
         if (backsector->floorheight > viewz)
           {
             ds_p->silhouette = SIL_BOTTOM;
-            ds_p->bsilheight = D_MAXINT;
+            ds_p->bsilheight = INT_MAX;
           }
 
       if (frontsector->ceilingheight < backsector->ceilingheight)
@@ -509,7 +509,7 @@ void R_StoreWallRange(const int start, const int stop)
         if (backsector->ceilingheight < viewz)
           {
             ds_p->silhouette |= SIL_TOP;
-            ds_p->tsilheight = D_MININT;
+            ds_p->tsilheight = INT_MIN;
           }
 
       // killough 1/17/98: this test is required if the fix
@@ -525,13 +525,13 @@ void R_StoreWallRange(const int start, const int stop)
         if (doorclosed || backsector->ceilingheight<=frontsector->floorheight)
           {
             ds_p->sprbottomclip = negonearray;
-            ds_p->bsilheight = D_MAXINT;
+            ds_p->bsilheight = INT_MAX;
             ds_p->silhouette |= SIL_BOTTOM;
           }
         if (doorclosed || backsector->floorheight>=frontsector->ceilingheight)
           {                   // killough 1/17/98, 2/8/98
             ds_p->sprtopclip = screenheightarray;
-            ds_p->tsilheight = D_MININT;
+            ds_p->tsilheight = INT_MAX;
             ds_p->silhouette |= SIL_TOP;
           }
       }
@@ -738,12 +738,12 @@ void R_StoreWallRange(const int start, const int stop)
   if (maskedtexture && !(ds_p->silhouette & SIL_TOP))
     {
       ds_p->silhouette |= SIL_TOP;
-      ds_p->tsilheight = D_MININT;
+      ds_p->tsilheight = INT_MIN;
     }
   if (maskedtexture && !(ds_p->silhouette & SIL_BOTTOM))
     {
       ds_p->silhouette |= SIL_BOTTOM;
-      ds_p->bsilheight = D_MAXINT;
+      ds_p->bsilheight = INT_MAX;
     }
   ds_p++;
 }
