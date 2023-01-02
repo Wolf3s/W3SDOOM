@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: m_fixed.h,v 1.5 1998/05/10 23:42:22 killough Exp $

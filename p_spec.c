@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: p_spec.c,v 1.56 1998/05/25 10:40:30 killough Exp $

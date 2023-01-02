@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: p_user.h,v 1.2 1998/05/10 23:38:38 killough Exp $

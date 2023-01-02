@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: i_sound.h,v 1.4 1998/05/03 22:31:58 killough Exp $

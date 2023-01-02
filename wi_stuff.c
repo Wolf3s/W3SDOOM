@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*- 
+// Emacs style mode select   -*- C -*- 
 //-----------------------------------------------------------------------------
 //
 // $Id: wi_stuff.c,v 1.11 1998/05/04 21:36:02 thldrmn Exp $

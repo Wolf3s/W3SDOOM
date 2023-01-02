@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: i_net.c,v 1.4 1998/05/16 09:41:03 jim Exp $
@@ -26,9 +26,9 @@
 //-----------------------------------------------------------------------------
 
 #ifdef UNIX
-#include "SDL2/SDL_net.h" //Gibbon
+#include <SDL2/SDL_net.h> //Gibbon
 #else
-#include "SDL_net.h"
+#include <SDL_net.h>
 #endif
 
 #include "z_zone.h"  /* memory allocation wrappers -- killough */

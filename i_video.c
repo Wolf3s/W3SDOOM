@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: i_video.c,v 1.12 1998/05/03 22:40:35 killough Exp $
@@ -29,9 +29,9 @@
 //static const char rcsid[] = "$Id: i_video.c,v 1.12 1998/05/03 22:40:35 killough Exp $";
 
 #ifdef UNIX
-#include "SDL2/SDL.h"
+#include <SDL2/SDL.h>
 #else
-#include "SDL.h" // haleyjd
+#include <SDL.h> // haleyjd
 #endif
 
 #include "z_zone.h"  /* memory allocation wrappers -- killough */

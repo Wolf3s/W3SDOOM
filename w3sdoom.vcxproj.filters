@@ -121,7 +121,6 @@
     <ClCompile Include="d_items.c" />
     <ClCompile Include="d_main.c" />
     <ClCompile Include="d_net.c" />
-    <ClCompile Include="doomdef.c" />
     <ClCompile Include="doomstat.c" />
     <ClCompile Include="dstrings.c" />
     <ClCompile Include="f_finale.c" />

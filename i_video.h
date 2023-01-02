@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: i_video.h,v 1.4 1998/05/03 22:40:58 killough Exp $
@@ -29,13 +29,7 @@
 #ifndef __I_VIDEO__
 #define __I_VIDEO__
 
-#ifdef __APPLE__
-#define MBF_WINDOW_TEXT "W3SDOOM - Version 1.00(Dev) - macOS"
-#elif defined _WIN32
-#define MBF_WINDOW_TEXT "W3SDOOM - Version 1.00(Dev) - Windows"
-#else
-#define MBF_WINDOW_TEXT "W3SDOOM - Version 1.00(Dev) - Unix"
-#endif
+#define MBF_WINDOW_TEXT "W3SDOOM - Version 1.00(Dev)"
 
 #include "doomtype.h"
 

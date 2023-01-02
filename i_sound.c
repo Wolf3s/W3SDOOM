@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: i_sound.c,v 1.15 1998/05/03 22:32:33 killough Exp $
@@ -31,13 +31,11 @@
 //Gibbon
 
 #ifdef UNIX
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_audio.h"
-#include "SDL2/SDL_mixer.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_mixer.h>
 #else
-#include "SDL.h"
-#include "SDL_audio.h"
-#include "SDL_mixer.h"
+#include <SDL.h>
+#include <SDL_mixer.h>
 #endif
 
 #include <math.h>
@@ -604,6 +602,8 @@ void I_InitSound(void)
       audio_buffers = SAMPLECOUNT * snd_samplerate / 11025;
 
       // haleyjd: the docs say we should do this
+      // André no need to initialize the SDL_audio the SDL_mixer can do the job.
+/*
       if(SDL_InitSubSystem(SDL_INIT_AUDIO))
       {
          printf("Couldn't initialize SDL audio.\n");
@@ -611,7 +611,7 @@ void I_InitSound(void)
          mus_card = 0;
          return;
       }
-  
+*/ 
       if(Mix_OpenAudio(snd_samplerate, MIX_DEFAULT_FORMAT, 2, audio_buffers) < 0)
       {
          printf("Couldn't open audio with desired format.\n");

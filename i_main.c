@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*-
+// Emacs style mode select   -*- C -*-
 //-----------------------------------------------------------------------------
 //
 // $Id: i_main.c,v 1.8 1998/05/15 00:34:03 killough Exp $
@@ -28,7 +28,7 @@
 
 //static const char rcsid[] = "$Id: i_main.c,v 1.8 1998/05/15 00:34:03 killough Exp $";
 
-#include "SDL.h"
+#include <SDL.h>
 
 #include "z_zone.h"
 #include "doomdef.h"

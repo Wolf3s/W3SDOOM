@@ -7,13 +7,13 @@ d_deh.c		i_net.c		p_doors.c	p_sight.c	r_things.c
 d_items.c	i_sound.c	p_enemy.c	p_spec.c	s_sound.c
 d_main.c	i_system.c	p_floor.c	p_switch.c	sounds.c
 d_net.c		i_video.c	p_genlin.c	p_telept.c	st_lib.c
-doomdef.c	info.c		p_inter.c	p_tick.c	st_stuff.c
-doomstat.c	m_argv.c	p_lights.c	p_user.c	tables.c
-dstrings.c	m_bbox.c	p_map.c		r_bsp.c		v_video.c
-f_finale.c	m_cheat.c	p_maputl.c	r_data.c	version.c
-f_wipe.c	m_menu.c	p_mobj.c	r_draw.c	w_wad.c
-g_game.c	m_misc.c	p_plats.c	r_main.c	wi_stuff.c
-hu_lib.c	m_random.c	p_pspr.c	r_plane.c	z_zone.c
+info.c		p_inter.c	p_tick.c	st_stuff.c  tables.c
+doomstat.c	m_argv.c	p_lights.c	p_user.c	v_video.c
+dstrings.c	m_bbox.c	p_map.c		r_bsp.c		version.c
+f_finale.c	m_cheat.c	p_maputl.c	r_data.c	w_wad.c
+f_wipe.c	m_menu.c	p_mobj.c	r_draw.c	wi_stuff.c
+g_game.c	m_misc.c	p_plats.c	r_main.c	z_zone.c
+hu_lib.c	m_random.c	p_pspr.c	r_plane.c	
 hu_stuff.c	mmus2mid.c	p_saveg.c	r_segs.c)
 set(GAME_INCLUDE_DIRS "${CMAKE_CURRENT_BINARY_DIR}")
 project("W3SDOOM")
