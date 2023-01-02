@@ -94,4 +94,5 @@ x64/Release_Acc/Pooch.vcxproj.FileListAbsolute.txt
 *.res
 *.dat
 *.cfg
+*.vs
 src/x64/Release/pooch.vcxproj.FileListAbsolute.txt
