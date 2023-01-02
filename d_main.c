@@ -555,7 +555,7 @@ char* D_DoomExeDir(void)
 #elif defined UNIX
 // cph - V.Aguilar (5/30/99) suggested return ~/.lxdoom/, creating
 //  if non-existant
-static const char pooch_dir[] = { "/.pooch/" };
+static const char w3sdoom_dir[] = { "/.w3sdoom/" };
 
 char* D_DoomExeDir(void)
 {
@@ -565,11 +565,11 @@ char* D_DoomExeDir(void)
         char* home = getenv("HOME");
         size_t len = strlen(home);
 
-        base = malloc(len + strlen(pooch_dir) + 1);
+        base = malloc(len + strlen(w3sdoom_dir) + 1);
         strcpy(base, home);
         // I've had trouble with trailing slashes before...
         if (base[len - 1] == '/') base[len - 1] = 0;
-        strcat(base, pooch_dir);
+        strcat(base, w3sdoom_dir);
         mkdir(base, S_IRUSR | S_IWUSR | S_IXUSR); // Make sure it exists
     }
     return base;
@@ -863,7 +863,7 @@ void IdentifyVersion (void)
   char *iwad;
 
     // get config file from same directory as executable
-    sprintf(basedefault,"pooch.cfg");
+    sprintf(basedefault,"w3sdoom.cfg");
     // set save path to -save parm or current dir
     strcpy(basesavegame, ".");       //jff 3/27/98 default to current dir
     if ((i = M_CheckParm("-save")) && i < myargc - 1) //jff 3/24/98 if -save present

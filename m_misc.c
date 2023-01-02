@@ -1978,7 +1978,7 @@ void M_LoadDefaults (void)
 
   // check for a custom default file
 
-  #define POOCH_CFG "pooch.cfg"
+  #define POOCH_CFG "w3sdoom.cfg"
 
   i = M_CheckParm ("-config");
   if (i && i < myargc-1)
@@ -1991,8 +1991,8 @@ void M_LoadDefaults (void)
     /* get config file from same directory as executable */
 #ifdef WINDOWS
     int len = snprintf(NULL, 0, "%s\\" POOCH_CFG, exedir);
-    defaultfile = malloc(len+1);
-    snprintf(defaultfile, len+1, "%s/" POOCH_CFG, exedir);
+    defaultfile = malloc(len + 1);
+    snprintf(defaultfile, len + 1, "%s/" POOCH_CFG, exedir);
 #else
     int len = snprintf(NULL, 0, "%s" POOCH_CFG, exedir);
     defaultfile = malloc(len + 1);

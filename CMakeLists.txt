@@ -16,14 +16,14 @@ g_game.c	m_misc.c	p_plats.c	r_main.c	wi_stuff.c
 hu_lib.c	m_random.c	p_pspr.c	r_plane.c	z_zone.c
 hu_stuff.c	mmus2mid.c	p_saveg.c	r_segs.c)
 set(GAME_INCLUDE_DIRS "${CMAKE_CURRENT_BINARY_DIR}")
-project("Pooch")
+project("W3SDOOM")
 
 # Any settings that should apply to all targets in this directory and all
 # subdirectories should go here.  Use judiciously.
 if(MSVC)
     add_definitions("/D_CRT_SECURE_NO_WARNINGS" "/D_CRT_SECURE_NO_DEPRECATE"
                     "/D_CRT_NONSTDC_NO_DEPRECATE")
-	set_target_properties("pooch" PROPERTIES
+	set_target_properties("W3SDOOM" PROPERTIES
                           LINK_FLAGS "/MANIFEST:NO")				
 else()
     add_compile_options("-Wall" "-Wdeclaration-after-statement"
@@ -36,11 +36,11 @@ find_package(SDL2_net 2.0.0)
 find_package(m)
 
 if( NOT WIN32 OR NOT MSVC )
-add_compile_definitions(pooch UNIX=1 DOGS=1)
-add_executable("pooch" ${SOURCE_FILES_WITH_DEH})
+add_compile_definitions(w3sdoom UNIX=1 DOGS=1)
+add_executable("W3SDOOM" ${SOURCE_FILES_WITH_DEH})
 else( WIN32 OR MSVC )
-add_compile_definitions(pooch WINDOWS=1 DOGS=1)
-add_executable("${PROGRAM_PREFIX}pooch" WIN32 ${SOURCE_FILES_WITH_DEH} "${CMAKE_CURRENT_BINARY_DIR}/win32/pooch.rc")
+add_compile_definitions(w3sdoom WINDOWS=1 DOGS=1)
+add_executable("${PROGRAM_PREFIX}W3SDOOM" WIN32 ${SOURCE_FILES_WITH_DEH} "${CMAKE_CURRENT_BINARY_DIR}/win32/w3sdoom.rc")
 endif( NOT WIN32 OR NOT MSVC )
 
 include(CheckSymbolExists)
@@ -50,10 +50,10 @@ check_symbol_exists(strncasecmp "strings.h" HAVE_DECL_STRNCASECMP)
 check_include_file("dirent.h" HAVE_DIRENT_H)
 
 # Without a hyphen. This is used for the bash-completion scripts.
-string(TOLOWER "pooch" PROGRAM_SPREFIX)
+string(TOLOWER "w3sdoom" PROGRAM_SPREFIX)
 
 # With a hyphen, used almost everywhere else.
-set(PROGRAM_PREFIX "pooch")
+set(PROGRAM_PREFIX "w3sdoom")
 
 foreach(SUBDIR ./)
     add_subdirectory("${SUBDIR}")

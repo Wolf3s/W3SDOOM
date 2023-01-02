@@ -143,11 +143,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     switch (message)
     {
     case WM_CREATE:
-        CreateWindowW(TEXT("button"), TEXT("Launch Pooch"),
+        CreateWindowW(TEXT("button"), TEXT("Launch W3SDOOM"),
             WS_VISIBLE | WS_CHILD,
             10, 285, 100, 32,
             hWnd, (HMENU)ID_POOCH_BUTTON, NULL, NULL);
-        CreateWindowW(TEXT("button"), TEXT("Launch Pooch Accessibility"),
+        CreateWindowW(TEXT("button"), TEXT("Launch W3SDOOM Accessibility"),
             WS_VISIBLE | WS_CHILD,
             120, 285, 200, 32,
             hWnd, (HMENU)ID_POOCHACC_BUTTON, NULL, NULL);
@@ -192,7 +192,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 ExecuteDoom.fMask = 0;
                 ExecuteDoom.hwnd = 0;
                 ExecuteDoom.lpVerb = _T("open");                    // Operation to perform
-                ExecuteDoom.lpFile = _T("pooch.exe");      // Application name
+                ExecuteDoom.lpFile = _T("W3SDOOM.exe");      // Application name
                 ExecuteDoom.lpParameters = argText;                 // Additional parameters
                 ExecuteDoom.lpDirectory = 0;                        // Default directory
                 ExecuteDoom.nShow = SW_SHOW;
@@ -218,7 +218,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 ExecuteHeretic.fMask = 0;
                 ExecuteHeretic.hwnd = 0;
                 ExecuteHeretic.lpVerb = _T("open");                    // Operation to perform
-                ExecuteHeretic.lpFile = _T("pooch_accessibility.exe");      // Application name
+                ExecuteHeretic.lpFile = _T("W3SDOOM_accessibility.exe");      // Application name
                 ExecuteHeretic.lpParameters = argText;                 // Additional parameters
                 ExecuteHeretic.lpDirectory = 0;                        // Default directory
                 ExecuteHeretic.nShow = SW_SHOW;

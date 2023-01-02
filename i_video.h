@@ -30,11 +30,11 @@
 #define __I_VIDEO__
 
 #ifdef __APPLE__
-#define MBF_WINDOW_TEXT "Pooch - Version 1.06 - macOS"
+#define MBF_WINDOW_TEXT "W3SDOOM - Version 1.00(Dev) - macOS"
 #elif defined _WIN32
-#define MBF_WINDOW_TEXT "Pooch - Version 1.06 - Windows"
+#define MBF_WINDOW_TEXT "W3SDOOM - Version 1.00(Dev) - Windows"
 #else
-#define MBF_WINDOW_TEXT "Pooch - Version 1.06 - Unix"
+#define MBF_WINDOW_TEXT "W3SDOOM - Version 1.00(Dev) - Unix"
 #endif
 
 #include "doomtype.h"
