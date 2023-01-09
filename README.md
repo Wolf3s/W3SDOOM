@@ -1,5 +1,5 @@
 # Wolf3s DOOM!
-[![W3SDOOM! Icon](https://github.com/wolfysdl/W3SDOOM/blob/master/src/w3sdoom_icon.png)](https://github.com/wolfysdl/W3SDOOM)
+[![W3SDOOM! Icon](https://github.com/wolfysdl/W3SDOOM/blob/master/w3sdoom_icon.png)](https://github.com/wolfysdl/W3SDOOM)
 
 WOLF3S DOOM or W3SDOOM is the continuation of pooch that it has some many several bugfixes 
 
